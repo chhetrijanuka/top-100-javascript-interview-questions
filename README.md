@@ -203,3 +203,220 @@ Ans: Minimize DOM access<br>
 
 ## 50. What are web workers in JavaScript?<br>
 Ans: Web Workers allow you to run JavaScript in the background, parallel to the main thread.<br>
+
+# Miscellaneous<br>
+## 51. What is hoisting in JavaScript?<br>
+Ans: Hoisting moves variable and function declarations to the top of their scope during
+compilation.<br>
+
+## 52. What is the purpose of this keyword?<br>
+Ans: It refers to the object that is currently calling the function.<br>
+
+## 53. What is the difference between == and Object.is()?<br>
+Ans: ==: Compares values with type coercion.<br>
+     Object.is(): Strict equality comparison, but considers NaN equal to itself and -0 different from
++0.<br>
+
+## 54. What is currying in JavaScript?<br>
+Ans: Currying transforms a function with multiple arguments into a sequence of functions, each
+taking a single argument.<br>
+
+## 55. What is memoization?<br>
+Ans: A technique to cache function results to avoid redundant calculations.<br>
+
+# Event Handling<br>
+## 56. What is event bubbling?<br>
+Ans: Event bubbling occurs when an event starts at the target element and propagates upward to
+its ancestors.<br>
+
+## 57. What is event capturing?<br>
+Ans: Event capturing (or trickling) occurs when an event starts at the topmost element and
+propagates down to the target element.<br>
+
+## 58. How can you stop event propagation?<br>
+Ans: Using event.stopPropagation().<br>
+
+## 59. What is the difference between stopPropagation and preventDefault?<br>
+Ans: stopPropagation: Stops the event from propagating to parent elements.<br>
+     preventDefault: Prevents the default action associated with the event.<br>
+
+## 60. What are synthetic events in React?<br>
+Ans: Synthetic events are React's cross-browser wrapper around the browser's native events.<br>
+
+# JavaScript Strings<br>
+## 61. What are template literals, and how are they used?<br>
+Ans: Template literals use backticks (`) and allow embedded expressions using ${}:
+     const greeting = Hello, ${name};<br>
+
+## 62. How do you check if a string contains a substring?<br>
+Ans: Using includes():
+     const password = "Hello World".includes("World"); // true<br>
+
+## 63. What is the difference between substrate and substring?<br>
+Ans: substring (start, length): Extracts part of a string based on a start index and length.<br>
+     substring(start, end): Extracts characters between start and end indices.<br>
+
+## 64. What is the purpose of split() in strings?<br>
+Ans: Splits a string into an array based on a specified
+delimiter . "a,b,c" .split(" , "); // ['a' , 'b' , 'c']<br>
+
+## 65. How do you reverse a string in JavaScript?<br>
+Ans: const reversed = str .split('').reverse().join('');<br>
+
+# Regular Expressions<br>
+## 66. What is a regular expression in JavaScript?<br>
+Ans: A pattern used to match character combinations in strings. Example:
+     const regex = /ABC/;<br>
+
+## 67. What does the g flag do in a regular expression?<br>
+Ans: The g flag stands for "global," allowing the regex to find all matches instead of stopping at
+the first.<br>
+
+## 68. What is the purpose of the test() method in regular expressions?<br>
+Ans: Tests whether a regex matches a string.<br>
+     /abc/.test("abcdef"); // true<br>
+
+## 69. What is the exec() method in regular expressions?<br>
+Ans: Executes a regex search and returns the matched result or null.<br>
+
+## 70. How can you replace text using a regular expression?<br>
+Ans: Using replace():"hello world" .replace(/world/, "JavaScript");<br>
+
+# JavaScript Numbers<br>
+## 71. How do you check if a value is a number in JavaScript?<br>
+Ans: Using typeof or Number .isFinite():Number .isFinite(123); // true<br>
+
+## 72. How do you convert a string to a number?<br>
+Ans: Number("123")<br>
+     parseInt("123")<br>
+     parseFloat("123.45")<br>
+
+## 73. What is the difference between parseInt and Number?<br>
+Ans: parseInt: Parses only the integer part of a string.<br>
+     Number: Converts the entire string into a number .<br>
+
+## 74. What is NaN in JavaScript?<br>
+Ans: NaN stands for "Not a Number" and represents an invalid number . isNaN("abc"); // true<br>
+
+## 75. How do you generate a random number in JavaScript?<br>
+Ans: Using Math.random(): const randomNum = Math.random(); // Between 0 and 1<br>
+
+# Miscellaneous<br>
+## 76. What is the difference between windows? onload and document.addEventListener('DOMContentLoaded')?<br>
+Ans: window.onload: Fires after the entire page (including assets) is loaded.<br>
+     DOMContentLoaded: Fires when the DOM is fully loaded without waiting for assets.<br>
+
+## 77. What are JavaScript cookies?<br>
+Ans: Cookies store small pieces of data on the client side. Example:<br>
+     document.cookie ="username=JohnDoe";<br>
+
+## 78. What is the eval() function in JavaScript?<br>
+Ans: It executes a string of JavaScript code.<br>
+     Warning: Avoid using it for security and performance reasons.<br>
+
+## 79. What is use strict?<br>
+Ans: A directive that enforces stricter parsing and error handling. Example: "use strict";<br>
+
+## 80. What is the difference between setTimeout and setInterval?<br>
+Ans: setTimeout: Executes a function once after a delay.<br>
+     setInterval: Repeats a function at regular intervals.<br>
+
+# TypeScript<br>
+## 81. What is TypeScript?<br>
+Ans: TypeScript is a superset of JavaScript that adds static typing.<br>
+
+## 82. What are the advantages of TypeScript?<br>
+Ans: Type safety<br>
+     Improved IDE support<br>
+     Easier debugging<br>
+     Scalability for large projects<br>
+
+## 83. How do you declare a variable in TypeScript?<br>
+Ans: let age: number = 25;<br>
+
+## 84. What are interfaces in TypeScript?<br>
+Ans: Interfaces define the shape of an object.<br>
+interface Person {<br>
+name: string;<br>
+age: number;<br>
+}<br>
+
+## 85. What is a union type in TypeScript?<br>
+Ans: Allows a variable to hold more than one type.<br>
+     let value: string | number;<br>
+
+# Best Practices<br>
+## 86. What is the purpose of IIFE (Immediately Invoked Function Expression)?<br>
+Ans: To create a private scope and avoid polluting the global namespace.<br>
+     (function() {<br>
+        console.log("IIFE");<br>
+      })();<br>
+
+## 87. What are design patterns in JavaScript?<br>
+Ans: Reusable solutions to common problems, e.g., Singleton, Factory, and Module patterns.<br>
+
+## 88. What is a polyfill?<br>
+Ans: A piece of code that provides modern functionality in older browsers.<br>
+
+## 89. What is the purpose of deferring in a <script> tag?<br>
+Ans: It loads the script in parallel but executes it only after the DOM is fully parsed.<br>
+
+## 90. What is the difference between local storage, session storage, and cookies?<br>
+Ans: localStorage: Data persists indefinitely.<br>
+     sessionStorage: Data persists until the session ends.<br>
+     Cookies: Data sent with every request, limited to 4KB.<br>
+
+# Advanced JavaScript Concepts<br>
+## 91. What is the difference between call(), apply(), and bind()?<br>
+Ans: call(): Invokes a function with a specified value and arguments provided one by one.<br>
+     apply(): Similar to call(), but arguments are provided as an array.<br>
+     bind(): Returns a new function with a specified value and arguments.<br>
+
+## 92. What are generator functions in JavaScript?<br>
+Ans: Generator functions, declared with function*, can pause execution using yield and resume later .<br>
+    function* generator() {<br>
+    yield 1;<br>
+    yield 2;<br>
+    }<br>
+
+## 93. What is the difference between Object.seal() and Object.freeze()?<br>
+Ans: Object.seal(): Prevents adding or removing properties but allows modification of
+existing properties.<br>
+    Object.freeze(): Prevents adding, removing, or modifying properties.<br>
+
+## 94. What is the purpose of the Reflect API in JavaScript?<br>
+Ans: The Reflect API provides methods for interceptable JavaScript operations, like property
+manipulation.<br>
+    Example:Reflect.set(obj,'key','value');<br>
+
+## 95. What is the async and await syntax in JavaScript?<br>
+Ans: async: Declares a function that always returns a Promise.<br>
+     await: Pauses the execution of an async function until a Promise is resolved or rejected.<br>
+     Example: async function fetchdata() { <br>
+              const response = await fetch(url);<br> 
+              console.log(response); <br>
+              }<br>
+
+# JavaScript DOM<br>
+## 96. How do you select elements in the DOM?<br>
+Ans: document.getElementById('id')<br>
+     document.querySelector('.class')<br>
+     document.getElementsByTagName('tag')<br>
+
+## 97. What is the difference between innerHTML and textContent?<br>
+Ans: innerHTML: Returns or sets the HTML content of an element.<br>
+    textContent: Returns or sets the text content, without HTML tags.<br>
+
+## 98. What is the purpose of the addEventListener() method?<br>
+Ans: It attaches an event handler to an element.<br>
+    element.addEventListener('click', function() {<br>
+    console.log('Clicked!');<br>
+    });<br>
+
+## 99. What is the difference between named and default exports in JavaScript modules?br>
+Ans: Named exports: Export multiple values by name.<br>
+    Default exports: Export a single value or function.<br>
+    export const value = 42; // Named export<br>
+    export default function() {} // Default export<br>
+
+## 100. Practice some output based questions<br>
