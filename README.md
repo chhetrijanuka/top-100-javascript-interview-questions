@@ -2,7 +2,7 @@
 
 You can also find me on Instagram for all such technical content: [@misstechie15](https://www.instagram.com/misstechie15/)
 
-##JavaScript Basics
+## JavaScript Basics
 
 ## 1. What is JavaScript?<br>
  Ans: JavaScript is a lightweight, interpreted programming language primarily used to create
@@ -30,7 +30,7 @@ Ans:  ==: Compares values with type coercion.<br>
       ===: Compares values without type coercion.
 <br>
 
-##JavaScript Functions 
+## JavaScript Functions 
 <br>
 
 ## 6. What are arrow functions?<br>
@@ -51,7 +51,7 @@ Ans: A pure function always produces the same output for the same input and has 
 Ans: Closures allow a function to access variables from its outer scope even after the outer
 function has been executed.<br>
 
-##Advanced JavaScript <br>
+## Advanced JavaScript <br>
 
 ## 11. What is the difference between null and undefined? <br>
 Ans: null: Explicitly set to indicate "no value."<br>
@@ -72,7 +72,7 @@ Ans: call: Invokes a function with a specified context and arguments passed indi
      apply: Similar to a call but takes arguments as an array.<br>
      bind: Returns a new function with this bound to a specified object.<br>
 
-##DOM Manipulation <br>
+## DOM Manipulation <br>
 
 ## 16. How can you select elements in the DOM?<br>
 Ans: getElementById()<br>
@@ -95,4 +95,4 @@ appendChild.<br>
 ## 20. What is event delegation?<br>
 Ans: Attaching a single event listener to a parent element to manage events for child elements.<br>
 
-##ES6+ Features <br>
+## ES6+ Features <br>
